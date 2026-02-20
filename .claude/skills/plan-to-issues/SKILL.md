@@ -73,16 +73,28 @@ Do NOT proceed to Phase 2 until the user explicitly confirms.
 
 Execute the following steps only after the user confirms.
 
-### Step 1 — Ensure the `from-plan` label exists
+### Step 1 — Ensure the `from-plan` and `claude` labels exist
 Run:
 ```
 gh label create "from-plan" --color "0075ca" --description "Issue generated from a Claude Code plan" --force
+gh label create "claude" --color "e4e669" --description "Ask Claude Code to implement this issue" --force
 ```
-The `--force` flag makes this idempotent. If this fails due to permissions, warn the user and continue without the label.
+The `--force` flag makes this idempotent. If either call fails due to permissions, warn the user and continue without that label.
 
 If `gh` is not authenticated, run `gh auth status` to diagnose and instruct the user to run `gh auth login` before retrying.
 
-### Step 2 — Create one issue per task
+### Step 2 — Ask which tasks to label with `claude`
+Use `AskUserQuestion` with `multiSelect: true`:
+
+- **Question:** "Which tasks should be labeled `claude` so Claude Code automatically works on them? (Select none to skip)"
+- **multiSelect:** true
+- **Options:** one option per task from the plan:
+  - **label:** `"Task N: <task title>"`
+  - **description:** the goal sentence for that task
+
+Record which task numbers the user selected. If the user selects none, no tasks will receive the `claude` label.
+
+### Step 3 — Create one issue per task
 For each `### Task N: <title>` section in the plan you generated:
 
 1. Extract:
@@ -91,7 +103,15 @@ For each `### Task N: <title>` section in the plan you generated:
    - **Details**: the bullet list under `**Details:**`
    - **Acceptance criteria**: the bullet list under `**Acceptance criteria:**`
 
-2. Create the issue:
+2. Create the issue. If this task was selected in Step 2, include `--label "claude"`:
+```
+gh issue create \
+  --title "<task title>" \
+  --label "from-plan" \
+  --label "claude" \
+  --body "<formatted body>"
+```
+For tasks not selected in Step 2, omit `--label "claude"`:
 ```
 gh issue create \
   --title "<task title>" \
@@ -118,7 +138,7 @@ Format the body as:
 
 If `gh issue create` fails, display the body that was attempted, and offer the user the choice to retry or skip.
 
-### Step 3 — Create the tracking issue
+### Step 4 — Create the tracking issue
 After all task issues are created, create a parent tracking issue:
 
 - **Title**: `[Plan] <plan title>`
@@ -137,7 +157,7 @@ After all task issues are created, create a parent tracking issue:
 <paste the ## Verification section from the plan>
 ```
 
-### Step 4 — Print summary
+### Step 5 — Print summary
 Output a summary like:
 
 ```
