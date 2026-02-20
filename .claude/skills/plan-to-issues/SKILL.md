@@ -77,7 +77,7 @@ Execute the following steps only after the user confirms.
 Run:
 ```
 gh label create "from-plan" --color "0075ca" --description "Issue generated from a Claude Code plan" --force
-gh label create "claude" --color "e4e669" --description "Ask Claude Code to implement this issue" --force
+gh label create "claude" --color "de7356" --description "Ask Claude Code to implement this issue" --force
 ```
 The `--force` flag makes this idempotent. If either call fails due to permissions, warn the user and continue without that label.
 
