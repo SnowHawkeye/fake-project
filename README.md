@@ -1,5 +1,7 @@
 # Documents Repository
 
+[![Claude Code](https://github.com/SnowHawkeye/fake-project/actions/workflows/claude.yml/badge.svg)](https://github.com/SnowHawkeye/fake-project/actions/workflows/claude.yml)
+
 A collection of text documents organized by category.
 
 ## Structure
