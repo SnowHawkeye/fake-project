@@ -1,0 +1,29 @@
+New Engineer Onboarding Checklist
+Team: Platform Engineering
+
+--- Day 1 ---
+[ ] Laptop setup and access credentials from IT
+[ ] Slack workspace invite and channel recommendations (#eng-general, #deployments, #alerts, #random)
+[ ] GitHub org access and repo permissions
+[ ] 1:1 with manager to review role and 30/60/90 day goals
+[ ] Meet the immediate team (intro call or in-person)
+
+--- Week 1 ---
+[ ] Complete security awareness training (link in HR portal)
+[ ] Run local dev environment end-to-end (follow setup guide in README)
+[ ] Review architecture overview doc and ask questions
+[ ] Shadow an on-call engineer for one day
+[ ] Complete first small task/ticket (labeled "good first issue" in Jira)
+
+--- Week 2–4 ---
+[ ] Participate in sprint ceremonies (planning, standup, retro)
+[ ] Complete at least one code review on a teammate's PR
+[ ] Merge your first non-trivial PR to main
+[ ] Review runbooks for top 3 most common alerts
+[ ] Set up PagerDuty account for future on-call rotation
+
+--- Resources ---
+- Engineering Handbook: [internal wiki link]
+- Architecture diagrams: [Confluence space link]
+- Incident response playbook: [Google Doc link]
+- Jira board: [Jira link]

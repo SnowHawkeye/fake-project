@@ -1,0 +1,24 @@
+Q3 2024 Engineering Retrospective (Archived)
+Period: July 1 – September 30, 2024
+
+Overall: Strong quarter. Shipped 4 major features, resolved 38 customer-reported bugs.
+
+--- Highlights ---
+- Launched self-serve billing portal (used by 200+ customers in first month)
+- Reduced p95 API latency from 620ms to 190ms after caching layer rollout
+- Zero SEV-1 incidents during the quarter (first time in 18 months!)
+
+--- Challenges ---
+- Under-estimated complexity of GDPR compliance work; spilled into Q4 backlog.
+- Two engineer departures in August created short-term capacity gaps.
+
+--- Metrics ---
+- Sprint velocity (avg): 82 points
+- Deployment frequency: 4.2 deploys/day
+- Change failure rate: 1.8%
+- Mean time to recovery: 22 minutes
+
+--- Carry-over to Q4 ---
+- GDPR data deletion endpoint (PROJ-998)
+- Performance profiling of the reporting service (PROJ-1034)
+- Tech debt: upgrade Node.js to v22 across all services (PROJ-1041)

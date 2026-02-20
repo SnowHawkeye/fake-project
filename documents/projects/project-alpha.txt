@@ -1,0 +1,21 @@
+Project Alpha - Q1 2025
+
+Status: In Progress
+Lead: Sarah Chen
+Team: Alex, Jordan, Marcus
+
+Overview:
+Project Alpha aims to migrate the legacy customer portal to a modern cloud-based architecture.
+The goal is to improve performance by 40% and reduce infrastructure costs.
+
+Key milestones:
+- Phase 1: Requirements gathering (complete)
+- Phase 2: Architecture design (complete)
+- Phase 3: Development (in progress)
+- Phase 4: Testing and QA (pending)
+- Phase 5: Production deployment (pending)
+
+Next steps:
+- Finalize API contracts with backend team
+- Set up staging environment
+- Begin integration testing

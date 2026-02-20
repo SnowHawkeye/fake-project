@@ -1,0 +1,22 @@
+Project Gamma - Data Warehouse Migration
+
+Status: Scoping
+Lead: Dana Wu
+Team: Leo, Priya
+
+Overview:
+Migrate from on-premise PostgreSQL clusters to a managed cloud data warehouse.
+This is a foundational initiative that unblocks several downstream analytics projects.
+
+Scope:
+- Migrate ~2TB of historical data
+- Re-implement 30+ existing ETL pipelines
+- Validate data integrity post-migration
+
+Timeline:
+- Kick-off: February 2025
+- Pilot migration (subset of tables): March 2025
+- Full migration: Q2 2025
+
+Notes:
+Coordinate closely with Project Beta team on schema requirements before finalizing the target data model.

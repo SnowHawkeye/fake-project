@@ -1,0 +1,22 @@
+Project Beta - Data Analytics Platform
+
+Status: Planning
+Lead: James Okafor
+Team: Priya, Leo, Dana
+
+Overview:
+Project Beta introduces an internal analytics dashboard to provide real-time insights
+into sales, customer behavior, and operational metrics.
+
+Goals:
+- Centralize data from 5+ disparate sources
+- Enable self-serve reporting for non-technical stakeholders
+- Reduce time-to-insight from days to minutes
+
+Dependencies:
+- Data warehouse migration (Project Gamma, ETA Q2)
+- SSO integration with existing identity provider
+
+Risks:
+- Data quality issues in legacy CRM export
+- Limited availability of data engineering resources in Q1

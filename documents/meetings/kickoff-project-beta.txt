@@ -1,0 +1,26 @@
+Project Beta Kick-off Meeting - February 3, 2025
+
+Attendees: James Okafor (lead), Priya Sharma, Leo Tran, Dana Wu, + stakeholders from Finance and Sales
+
+Agenda:
+1. Project overview and goals
+2. Roles and responsibilities
+3. Timeline review
+4. Q&A
+
+Summary:
+James walked through the project brief. The main driver is the CEO's request for a live revenue
+dashboard ahead of the board meeting in Q2. Finance and Sales reps confirmed their top-priority
+metrics: ARR, churn rate, pipeline coverage, and regional breakdown.
+
+Key decisions made:
+- Use Looker as the BI layer (approved by IT)
+- Priya will own the data modeling workstream
+- Leo will handle ETL pipeline development
+- Dana is the liaison to Project Gamma for warehouse readiness
+
+Open questions:
+- Which historical date range is needed for trend analysis? (Finance to confirm by Feb 10)
+- Will external partner data be in scope for v1? (Deprioritized for now, revisit in v2 planning)
+
+Next meeting: February 17 — sprint planning for Phase 1
