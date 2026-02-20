@@ -1,0 +1,23 @@
+Sprint Retrospective - January Sprint (Jan 6 – Jan 17, 2025)
+
+Facilitator: Jordan Kim
+Attendees: Sarah, Alex, Jordan, Marcus, Priya, James
+
+--- What went well ---
+- Strong collaboration between frontend and backend teams on Project Alpha API work.
+- CI pipeline improvements reduced build times by ~25%.
+- All sprint commitments were met despite two team members being on PTO.
+
+--- What could be improved ---
+- Sprint planning sessions ran over time; consider timebox of 90 minutes max.
+- Some tickets lacked clear acceptance criteria, leading to rework.
+- Communication between Project Alpha and Project Beta teams was ad-hoc; schedule a regular sync.
+
+--- Action items ---
+- Sarah: Add acceptance criteria template to Jira ticket workflow by Jan 24.
+- Marcus: Document CI setup and share with the broader engineering org.
+- James: Set up bi-weekly cross-project sync starting Feb 3.
+
+--- Team health ---
+Overall morale: Good. Energy is high going into Q1.
+One concern raised: on-call rotation coverage is thin; will address in next sprint planning.

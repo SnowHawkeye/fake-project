@@ -1,0 +1,31 @@
+Brainstorm - Internal Developer Experience Improvements
+Date: January 28, 2025
+Author: Marcus Lee
+
+Ideas collected during informal eng team session:
+
+1. Unified local dev environment
+   - Consolidate setup into a single `make dev` command
+   - Use Docker Compose to spin up all services consistently
+   - Add health checks and auto-seed scripts for local DB
+
+2. Improve onboarding docs
+   - Current README is outdated (last updated 2023)
+   - Create a "Getting Started in 30 minutes" guide
+   - Record a short walkthrough video
+
+3. Reduce alert fatigue
+   - Too many non-actionable PagerDuty alerts
+   - Audit all alerts and classify as P1/P2/P3
+   - Silence or downgrade anything that hasn't required action in 60 days
+
+4. Internal tooling wishlist
+   - Slack bot to look up ticket status without leaving Slack
+   - Deploy dashboard showing what's live in each environment
+   - Automated changelog generation from commit messages
+
+Priority votes (team of 7):
+- Unified dev environment: 6 votes
+- Reduce alert fatigue: 5 votes
+- Improve onboarding: 4 votes
+- Internal tooling: 3 votes

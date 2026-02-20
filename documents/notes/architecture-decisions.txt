@@ -1,0 +1,26 @@
+Architecture Decision Notes
+Last updated: February 5, 2025
+
+--- ADR-001: Choose API Gateway ---
+Decision: Use AWS API Gateway (HTTP API, not REST API)
+Rationale: Lower cost, lower latency; REST API features (usage plans, caching) not needed for our use case.
+Status: Accepted
+
+--- ADR-002: Authentication Strategy ---
+Decision: Implement OAuth 2.0 with Cognito as the identity provider
+Rationale: Avoids building and maintaining custom auth; Cognito supports SSO with corporate SAML IdP.
+Status: Accepted
+Trade-offs: Adds Cognito as an infrastructure dependency; team needs to ramp up on Cognito specifics.
+
+--- ADR-003: Frontend State Management ---
+Decision: Use React Query for server state; avoid Redux
+Rationale: Most state in this app is server state (fetched data). React Query handles caching, refetching, and
+loading states cleanly. Redux adds overhead with little benefit here.
+Status: Accepted
+
+--- ADR-004: Database ---
+Decision: PostgreSQL on RDS (Aurora Serverless v2)
+Rationale: Aurora Serverless v2 scales to zero, reducing costs in non-prod environments.
+Status: Proposed – pending cost estimate review by Feb 14.
+
+Notes: Revisit database choice if write throughput requirements increase significantly beyond current projections.

@@ -1,0 +1,21 @@
+Project: Legacy CRM Migration (ARCHIVED)
+Completed: October 2024
+
+Summary:
+Successfully migrated from the in-house CRM (built 2016) to Salesforce.
+~15,000 customer records were migrated with full data validation.
+
+Outcomes:
+- Zero data loss confirmed post-migration
+- Sales team adoption reached 90% within 30 days
+- Reduced manual reporting time by ~8 hours/week across the sales org
+
+Lessons learned:
+- Data cleansing took 3x longer than estimated; invest more time in discovery upfront.
+- Stakeholder communication plan was critical — weekly update emails kept leadership informed and reduced escalations.
+- Custom Salesforce objects required more configuration than anticipated; allow buffer time for this.
+
+Archived assets:
+- Migration runbook: stored in Confluence (legacy projects space)
+- Data mapping spreadsheet: Google Drive (shared drive "2024 Projects")
+- Test results: Jira epic PROJ-1102
